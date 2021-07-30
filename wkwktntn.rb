@@ -8,8 +8,8 @@ class Wkwktntn
     6 => 'こ',
   }
 
-  def self.injection(times: 1)
-    times.times { |time|
+  def self.injection(times:)
+    (times || 1).times { |time|
       dice_throw()
     }
   end
